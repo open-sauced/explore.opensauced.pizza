@@ -1,0 +1,19 @@
+.graphiql-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+html,
+html img,
+html picture,
+html video {
+  filter: invert(0.11);
+}
+
+
+html.dark,
+html.dark img,
+html.dark picture,
+html.dark video {
+  filter: invert(0.88) hue-rotate(180deg);
+}
