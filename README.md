@@ -1,4 +1,4 @@
-<div style="text-align: center">
+<div style="text-align: center" align="center">
   <img alt="Open Sauced" src="https://i.ibb.co/7jPXt0Z/logo1-92f1a87f.png" width="300px" />
 
 # explore.opensauced.pizza
