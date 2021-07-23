@@ -1,65 +1,16 @@
 import React, { Component } from 'react';
 import GraphiQL from 'graphiql';
-import GraphiQLExplorer from 'graphiql-explorer';
+//import GraphiQLExplorer from 'graphiql-explorer';
 import {buildClientSchema, getIntrospectionQuery, parse} from 'graphql';
 
-import { makeDefaultArg, getDefaultScalarArgValue } from './CustomArgs';
+//import { makeDefaultArg, getDefaultScalarArgValue } from './CustomArgs';
 import ColorSchemeToggle from './ColorSchemeToggle';
 import Config from "./config";
-
+import Queries from "./Queries"
 import 'graphiql/graphiql.css';
 import './App.css';
 
-const DEFAULT_QUERY = `# shift-option/alt-click on a query below to jump to it in the explorer
-# option/alt-click on a field in the explorer to select all subfields
-
-  query IssuesBeforeQuery($owner: String!, $repo: String!, $cursor: String) {
-    gitHub {
-      repositoryOwner(login: $owner) {
-        repository(name: $repo) {
-          issues(first: 5, states: OPEN, orderBy: {field: CREATED_AT, direction: DESC}, before: $cursor) {
-            totalCount
-            data: edges {
-              cursor
-              node {
-                id
-                title
-                url
-                state
-                author {
-                  login
-                }
-                labels(first: 5) {
-                  data: edges {
-                    node {
-                      id
-                      name
-                      color
-                    }
-                  }
-                }
-                comments {
-                  totalCount
-                }
-                milestone {
-                  title
-                }
-                participants(first: 3) {
-                  totalCount
-                  nodes {
-                    login
-                    avatarUrl
-                  }
-                }
-                createdAt
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+const DEFAULT_QUERY = Queries.ALL;
 
 class App extends Component {
   constructor(props) {
@@ -68,7 +19,7 @@ class App extends Component {
     this.state = {
       schema: null,
       query: DEFAULT_QUERY,
-      explorerIsOpen: true,
+//      explorerIsOpen: false,
       isLoggedIn: false,
     };
   }
@@ -158,10 +109,10 @@ class App extends Component {
 
   handleEditQuery = (query) => this.setState({ query });
 
-  handleToggleExplorer = () => {
+/*  handleToggleExplorer = () => {
     this.setState({ explorerIsOpen: !this.state.explorerIsOpen });
   };
-
+*/
   handleLogin = () => {
     const { isLoggedIn } = this.state;
 
@@ -192,20 +143,10 @@ class App extends Component {
   }
 
   render() {
-    const { query, schema, explorerIsOpen, isLoggedIn } = this.state;
+    const { query, schema, isLoggedIn } = this.state;
 
     return (
       <div className="graphiql-container">
-        <GraphiQLExplorer
-          schema={schema}
-          query={query}
-          onEdit={this.handleEditQuery}
-          onRunOperation={(operationName) => this.graphiql.handleRunQuery(operationName)}
-          explorerIsOpen={explorerIsOpen}
-          onToggleExplorer={this.handleToggleExplorer}
-          getDefaultScalarArgValue={getDefaultScalarArgValue}
-          makeDefaultArg={makeDefaultArg}
-        />
         <GraphiQL
           ref={(ref) => { this.graphiql = ref; }}
           fetcher={Config.fetchOneGraph}
@@ -214,20 +155,22 @@ class App extends Component {
           onEditQuery={this.handleEditQuery}
         >
           <GraphiQL.Toolbar>
+          <select
+                onChange={(e)=>{
+                  const key = e.target.value;
+                  console.log(key);
+                  this.handleEditQuery(Queries[key]);
+                }}
+              >
+              {Object.keys(Queries).filter(key => key !== 'ALL').map(key => {
+                const isMutation = Queries[key].trim().indexOf('mutation') == 0;
+                return <option value={key}>{key}</option>
+              })}
+            </select>
             <GraphiQL.Button
               onClick={() => this.graphiql.handlePrettifyQuery()}
               label="Prettify"
               title="Prettify Query (Shift-Ctrl-P)"
-            />
-            <GraphiQL.Button
-              onClick={() => this.graphiql.handleToggleHistory()}
-              label="History"
-              title="Show History"
-            />
-            <GraphiQL.Button
-              onClick={this.handleToggleExplorer}
-              label="Explorer"
-              title="Toggle Explorer"
             />
             <ColorSchemeToggle />
             <GraphiQL.Button
