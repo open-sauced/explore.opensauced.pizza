@@ -28,16 +28,19 @@
     "use-persisted-state": "^0.3.3"
   },
   "devDependencies": {
+    "@eclass/semantic-release-docker": "^1.0.7",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.2.0",
+    "@testing-library/user-event": "^13.2.1",
     "commitizen": "^4.2.4",
+    "conventional-changelog-conventionalcommits": "^4.6.0",
     "cz-conventional-changelog": "^3.3.0",
     "react-scripts": "4.0.3",
     "semantic-release": "^17.4.4",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "web-vitals": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -45,7 +48,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "push": "cz",
-    "format": "eslint . --fix --report-unused-disable-directives",
+    "lint": "eslint . --report-unused-disable-directives",
+    "format": "npm run lint -- --fix",
     "semantic-release": "semantic-release"
   },
   "browserslist": {
