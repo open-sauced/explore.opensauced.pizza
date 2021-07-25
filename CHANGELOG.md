@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.0.0...v1.1.0) (2021-07-25)
+
+
+### Features
+
+* improve semantic release mechanism ([#5](https://github.com/open-sauced/explore.opensauced.pizza/issues/5)) ([a48bbce](https://github.com/open-sauced/explore.opensauced.pizza/commit/a48bbceb803feae0f25386f3763c33d3773e284f)), closes [#4](https://github.com/open-sauced/explore.opensauced.pizza/issues/4)
+
 # 1.0.0 (2021-07-22)
 
 
