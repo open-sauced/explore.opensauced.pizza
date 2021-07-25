@@ -1,3 +1,10 @@
+### [1.1.1](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.1.0...v1.1.1) (2021-07-25)
+
+
+### Bug Fixes
+
+* correct github container registry package name ([#6](https://github.com/open-sauced/explore.opensauced.pizza/issues/6)) ([269258e](https://github.com/open-sauced/explore.opensauced.pizza/commit/269258e6804f05b1dfa5f318f3d1cccf310ad4bf)), closes [#4](https://github.com/open-sauced/explore.opensauced.pizza/issues/4)
+
 ## [1.1.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.0.0...v1.1.0) (2021-07-25)
 
 
