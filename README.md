@@ -12,6 +12,10 @@
  
 </div>
 
+## 🧪 Built for Experimenting
+
+This tool is meant to accelerate development on [Open Sauced](https://opensauced.pizza) by giving contributors a way to explorer GraphQL queries/mutations and results in an interactive way. It is similar to most implementations of GraphiQL, except that it features dropdown menus to select from the various dynamic queries in use by [Open Sauced](https://opensauced.pizza), described in [https://docs.opensauced.pizza](https://docs.opensauced.pizza).
+
 ## 🤝 Contributing
 
 We encourage you to contribute to Open Sauced! Please check out the [Contributing guide](CONTRIBUTING.md) for guidelines about how to proceed.
