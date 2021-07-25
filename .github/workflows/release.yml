@@ -159,10 +159,19 @@ jobs:
       - release
     runs-on: ubuntu-latest
     steps:
+      - name: "☁️ checkout repository"
+        uses: actions/checkout@v2
+
       - name: "📂 download artifacts"
         uses: actions/download-artifact@v2
         with:
           name: build
+          path: /home/runner/build
+
+      - name: "📂 copy artifacts"
+        run: |
+          cp -R /home/runner/build .
+          ls -lahH ./build
 
       - name: "🚀 deploy static"
         uses: peaceiris/actions-gh-pages@v3
