@@ -68,7 +68,7 @@ module.exports = {
         "registries": [
           {
             "url": "ghcr.io",
-            "imageName": `ghcr.io/${process.env.REPO_OWNER}/${process.env.REPO_NAME}`,
+            "imageName": `ghcr.io/${process.env.GITHUB_REPOSITORY}`,
             "user": "REPO_OWNER",
             "password": "GITHUB_TOKEN"
           }
