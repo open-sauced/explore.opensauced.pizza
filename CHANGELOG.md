@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.1.2...v1.2.0) (2021-07-26)
+
+
+### Features
+
+* narrow UX for exploring open-sauced gql ([#2](https://github.com/open-sauced/explore.opensauced.pizza/issues/2)) ([c03e9a7](https://github.com/open-sauced/explore.opensauced.pizza/commit/c03e9a71cf9d568b6efe1f273fbf1d30161061db)), closes [#1](https://github.com/open-sauced/explore.opensauced.pizza/issues/1)
+
 ### [1.1.2](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.1.1...v1.1.2) (2021-07-26)
 
 
