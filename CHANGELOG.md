@@ -1,3 +1,24 @@
+### [1.1.2](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.1.1...v1.1.2) (2021-07-26)
+
+
+### Bug Fixes
+
+* add proper checkout function to the release workflow and correct path ([#8](https://github.com/open-sauced/explore.opensauced.pizza/issues/8)) ([f40930b](https://github.com/open-sauced/explore.opensauced.pizza/commit/f40930baf995bb8e05f0d7923fd75f3d0e36e80c)), closes [#7](https://github.com/open-sauced/explore.opensauced.pizza/issues/7)
+
+### [1.1.1](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.1.0...v1.1.1) (2021-07-25)
+
+
+### Bug Fixes
+
+* correct github container registry package name ([#6](https://github.com/open-sauced/explore.opensauced.pizza/issues/6)) ([269258e](https://github.com/open-sauced/explore.opensauced.pizza/commit/269258e6804f05b1dfa5f318f3d1cccf310ad4bf)), closes [#4](https://github.com/open-sauced/explore.opensauced.pizza/issues/4)
+
+## [1.1.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.0.0...v1.1.0) (2021-07-25)
+
+
+### Features
+
+* improve semantic release mechanism ([#5](https://github.com/open-sauced/explore.opensauced.pizza/issues/5)) ([a48bbce](https://github.com/open-sauced/explore.opensauced.pizza/commit/a48bbceb803feae0f25386f3763c33d3773e284f)), closes [#4](https://github.com/open-sauced/explore.opensauced.pizza/issues/4)
+
 # 1.0.0 (2021-07-22)
 
 
