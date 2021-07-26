@@ -1,3 +1,10 @@
+### [1.1.2](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.1.1...v1.1.2) (2021-07-26)
+
+
+### Bug Fixes
+
+* add proper checkout function to the release workflow and correct path ([#8](https://github.com/open-sauced/explore.opensauced.pizza/issues/8)) ([f40930b](https://github.com/open-sauced/explore.opensauced.pizza/commit/f40930baf995bb8e05f0d7923fd75f3d0e36e80c)), closes [#7](https://github.com/open-sauced/explore.opensauced.pizza/issues/7)
+
 ### [1.1.1](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.1.0...v1.1.1) (2021-07-25)
 
 
