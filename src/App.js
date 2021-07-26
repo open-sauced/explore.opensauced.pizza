@@ -147,6 +147,9 @@ class App extends Component {
   }
 
   handleEditQuery = (query) => this.setState({ query });
+  handleToggleExplorer = () => {
+    this.setState({ explorerIsOpen: !this.state.explorerIsOpen });
+  };
   handleEditOperationName = (operationName) => this.setState({ operationName })
   handleLogin = () => {
     const { isLoggedIn } = this.state;
@@ -220,6 +223,16 @@ class App extends Component {
               onClick={() => this.graphiql.handlePrettifyQuery()}
               label="Prettify"
               title="Prettify Query (Shift-Ctrl-P)"
+            />
+            <GraphiQL.Button
+              onClick={() => this.graphiql.handleToggleHistory()}
+              label="History"
+              title="Show History"
+            />
+            <GraphiQL.Button
+              onClick={this.handleToggleExplorer}
+              label="Explorer"
+              title="Toggle Explorer"
             />
             <ColorSchemeToggle />
             <GraphiQL.Button
