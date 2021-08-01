@@ -1,3 +1,10 @@
+### [1.3.1](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.3.0...v1.3.1) (2021-08-01)
+
+
+### Bug Fixes
+
+* proper static distribution pate adjustment ([#16](https://github.com/open-sauced/explore.opensauced.pizza/issues/16)) ([1e20f00](https://github.com/open-sauced/explore.opensauced.pizza/commit/1e20f002c11731a09ce4a1e871cf0f857d121fa2))
+
 ## [1.3.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.2.0...v1.3.0) (2021-08-01)
 
 
