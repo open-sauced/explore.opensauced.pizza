@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.2.0...v1.3.0) (2021-08-01)
+
+
+### Features
+
+* modernise semantic-release config with @open-sauced/semantic-release-conventional-config ([#15](https://github.com/open-sauced/explore.opensauced.pizza/issues/15)) ([85ca3f4](https://github.com/open-sauced/explore.opensauced.pizza/commit/85ca3f4bed7464136c9de3350903ad0214d70de5))
+
 ## [1.2.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.1.2...v1.2.0) (2021-07-26)
 
 
