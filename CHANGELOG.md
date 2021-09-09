@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.3.1...v1.4.0) (2021-09-09)
+
+
+### Features
+
+* filter chargebee subgraph ([#18](https://github.com/open-sauced/explore.opensauced.pizza/issues/18)) ([e05cb6d](https://github.com/open-sauced/explore.opensauced.pizza/commit/e05cb6dca94a7c1e600e8a0a9e0910b50c0b546f)), closes [#17](https://github.com/open-sauced/explore.opensauced.pizza/issues/17)
+
 ### [1.3.1](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.3.0...v1.3.1) (2021-08-01)
 
 
