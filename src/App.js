@@ -10,7 +10,7 @@ import Queries from "./Queries"
 import 'graphiql/graphiql.css';
 import './App.css';
 const DEFAULT_QUERY = "";
-const blacklistRe = /(adroll|airtable|apollo|asana|box|brex|bundlephobia|chargebee|clearbit|cloudflare|contentful|crunchbase|descuri|devTo|dribbble|dropbox|eggheadio|emailNode|eventil|facebookBusiness|fedex|firebase|google|googleAds|hubspot|immigrationGraph|intercom|logdna|mailchimp|meetup|mixpanel|mux|netlify|npm|openCollective|orbit|productHunt|quickbooks|rss|salesforce|slack|spotify|stripe|trello|twilio|twitchTv|twitter|ups|usps|ynab|youTube|youTubeSearch|youTubeVideo|zeit|zendesk)/i;
+const blacklistRe = /(adroll|airtable|apollo|asana|box|brex|bundlephobia|chargebee|clearbit|cloudflare|contentful|crunchbase|descuri|devTo|dribbble|dropbox|eggheadio|emailNode|eventil|facebookBusiness|fedex|firebase|google|googleAds|hubspot|immigrationGraph|intercom|logdna|mailchimp|meetup|mixpanel|mux|netlify|notion|npm|openCollective|orbit|productHunt|quickbooks|rss|salesforce|slack|spotify|stripe|trello|twilio|twitchTv|twitter|ups|usps|ynab|youTube|youTubeSearch|youTubeVideo|zeit|zendesk)/i;
 const typeBlackListFn = (f) => {
   return !(
     (f.type && f.type.name && blacklistRe.test(f.type.name))
