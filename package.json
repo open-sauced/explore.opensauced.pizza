@@ -14,7 +14,7 @@
     "url": "git+ssh://git@github.com/open-sauced/explore.opensauced.pizza.git"
   },
   "engines": {
-    "node": ">=16",
+    "node": ">=14",
     "npm": ">=7"
   },
   "dependencies": {
@@ -28,6 +28,7 @@
     "use-persisted-state": "^0.3.3"
   },
   "devDependencies": {
+    "@open-sauced/check-engines": "^1.0.0",
     "@open-sauced/semantic-release-conventional-config": "^1.1.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
@@ -40,6 +41,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "preinstall": "npx @open-sauced/check-engines",
+    "prestart": "npx @open-sauced/check-engines",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
