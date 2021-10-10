@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.4.0...v1.5.0) (2021-10-10)
+
+
+### Features
+
+* filter notion subgraph ([#20](https://github.com/open-sauced/explore.opensauced.pizza/issues/20)) ([b9f4c81](https://github.com/open-sauced/explore.opensauced.pizza/commit/b9f4c81ebc7b896f243bf183995c81eb3b4ffb34)), closes [#19](https://github.com/open-sauced/explore.opensauced.pizza/issues/19)
+
 ## [1.4.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.3.1...v1.4.0) (2021-09-09)
 
 
