@@ -1,3 +1,10 @@
+## [1.6.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.5.0...v1.6.0) (2021-10-10)
+
+
+### Features
+
+* implement @open-sauced/check-engines ([#21](https://github.com/open-sauced/explore.opensauced.pizza/issues/21)) ([c923641](https://github.com/open-sauced/explore.opensauced.pizza/commit/c92364101ff9322c4a4a8d8bd8fce0ce6e7bba42))
+
 ## [1.5.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.4.0...v1.5.0) (2021-10-10)
 
 
