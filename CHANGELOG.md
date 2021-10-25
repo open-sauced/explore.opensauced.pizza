@@ -1,3 +1,10 @@
+## [1.7.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.6.0...v1.7.0) (2021-10-25)
+
+
+### Build System
+
+* add dependabot missing minors ([#22](https://github.com/open-sauced/explore.opensauced.pizza/issues/22)) ([d7332da](https://github.com/open-sauced/explore.opensauced.pizza/commit/d7332dab949bb6f89f2513ef2bc515151bd57c18))
+
 ## [1.6.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.5.0...v1.6.0) (2021-10-10)
 
 
