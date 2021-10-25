@@ -40,7 +40,7 @@ jobs:
       - name: "🔧 setup node"
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: 16
+          node-version: 14
 
       - name: "🔧 setup cache"
         uses: actions/cache@v2
@@ -50,8 +50,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: "🔧 install npm@7"
-        run: npm i -g npm@7
+      - name: "🔧 install npm@latest"
+        run: npm i -g npm@latest
 
       - name: "📦 install dependencies"
         run: npm ci
@@ -75,7 +75,7 @@ jobs:
       - name: "🔧 setup node"
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: 16
+          node-version: 14
 
       - name: "🔧 setup cache"
         uses: actions/cache@v2
@@ -85,8 +85,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: "🔧 install npm@7"
-        run: npm i -g npm@7
+      - name: "🔧 install npm@latest"
+        run: npm i -g npm@latest
 
       - name: "📦 install dependencies"
         run: npm ci
@@ -101,7 +101,7 @@ jobs:
     name: Semantic release
     needs:
       - docker
-      - lint
+      - build
     runs-on: ubuntu-latest
     steps:
       - name: "☁️ checkout repository"
@@ -112,7 +112,7 @@ jobs:
       - name: "🔧 setup node"
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: 16
+          node-version: 14
 
       - name: "🔧 setup cache"
         uses: actions/cache@v2
@@ -122,8 +122,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: "🔧 install npm@7"
-        run: npm i -g npm@7
+      - name: "🔧 install npm@latest"
+        run: npm i -g npm@latest
 
       - name: "📦 install dependencies"
         run: npm ci
@@ -149,7 +149,8 @@ jobs:
         id: release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO_OWNER: ${{ github.repository_owner }}
+          DOCKER_USERNAME: ${{ github.repository_owner }}
+          DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
           GIT_AUTHOR_NAME: ${{ github.event.commits[0].author.username }}
           GIT_AUTHOR_EMAIL: ${{ github.event.commits[0].author.email }}
           GIT_COMMITTER_NAME: ${{ secrets.GIT_COMMITTER_NAME }}
