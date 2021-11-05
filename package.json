@@ -18,7 +18,7 @@
     "npm": ">=7"
   },
   "dependencies": {
-    "graphiql": "^1.4.2",
+    "graphiql": "^1.4.7",
     "graphiql-explorer": "^0.6.3",
     "graphql": "^15.5.0",
     "onegraph-auth": "^4.0.2",
@@ -28,9 +28,9 @@
     "use-persisted-state": "^0.3.3"
   },
   "devDependencies": {
-    "@open-sauced/check-engines": "^1.0.0",
-    "@open-sauced/semantic-release-conventional-config": "^2.0.1",
-    "@testing-library/jest-dom": "^5.14.1",
+    "@open-sauced/check-engines": "^1.1.0",
+    "@open-sauced/semantic-release-conventional-config": "^2.0.3",
+    "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "commitizen": "^4.2.4",
