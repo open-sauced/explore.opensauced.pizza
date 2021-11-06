@@ -1,3 +1,10 @@
+### [1.7.1](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.7.0...v1.7.1) (2021-11-06)
+
+
+### Continuous Integration
+
+* improve workflow reusability across repositories ([#23](https://github.com/open-sauced/explore.opensauced.pizza/issues/23)) ([52f3e27](https://github.com/open-sauced/explore.opensauced.pizza/commit/52f3e2773d2b59c6951694d51308bf2e4d476023))
+
 ## [1.7.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.6.0...v1.7.0) (2021-10-25)
 
 
