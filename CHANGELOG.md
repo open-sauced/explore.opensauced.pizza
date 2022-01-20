@@ -1,3 +1,10 @@
+### [1.8.1](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.8.0...v1.8.1) (2022-01-20)
+
+
+### Bug Fixes
+
+* check for list of type ([#29](https://github.com/open-sauced/explore.opensauced.pizza/issues/29)) ([b6a62a4](https://github.com/open-sauced/explore.opensauced.pizza/commit/b6a62a40251e162bc51b70fff40887a57b689073)), closes [#28](https://github.com/open-sauced/explore.opensauced.pizza/issues/28)
+
 ## [1.8.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.7.1...v1.8.0) (2021-11-10)
 
 
