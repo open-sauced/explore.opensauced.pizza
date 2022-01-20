@@ -11,11 +11,19 @@ import 'graphiql/graphiql.css';
 import './App.css';
 const DEFAULT_QUERY = "";
 const blacklistRe = /(adroll|airtable|apollo|asana|box|brex|bundlephobia|chargebee|clearbit|cloudflare|contentful|crunchbase|descuri|devTo|dribbble|dropbox|eggheadio|emailNode|eventil|facebookBusiness|fedex|firebase|google|googleAds|hubspot|immigrationGraph|intercom|logdna|mailchimp|meetup|mixpanel|mux|netlify|notion|npm|openCollective|orbit|productHunt|quickbooks|rss|salesforce|slack|spotify|stripe|trello|twilio|twitchTv|twitter|ups|usps|ynab|youTube|youTubeSearch|youTubeVideo|zeit|zendesk)/i;
+const typeListBlackListFn = (f) => {
+  return f.type && f.type.ofType && f.type.ofType.kind === "LIST"
+    && f.type.ofType.ofType
+    && f.type.ofType.ofType.ofType
+    && f.type.ofType.ofType.ofType.name
+    && blacklistRe.test(f.type.ofType.ofType.ofType.name)
+}
 const typeBlackListFn = (f) => {
   return !(
     (f.type && f.type.name && blacklistRe.test(f.type.name))
     || (f.name && blacklistRe.test(f.name))
     || (f.type && f.type.ofType && f.type.ofType.name && blacklistRe.test(f.type.ofType.name))
+    || typeListBlackListFn(f)
   );
 }
 // Filter function for picking things that are not blacklisted
