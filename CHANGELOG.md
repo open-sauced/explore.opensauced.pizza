@@ -1,3 +1,10 @@
+## [1.9.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.8.1...v1.9.0) (2022-01-23)
+
+
+### Features
+
+* filter docusign and gmail ([#31](https://github.com/open-sauced/explore.opensauced.pizza/issues/31)) ([ab2a7f6](https://github.com/open-sauced/explore.opensauced.pizza/commit/ab2a7f62a10ff449a088ce39067435b0dbe8b15e)), closes [#30](https://github.com/open-sauced/explore.opensauced.pizza/issues/30)
+
 ### [1.8.1](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.8.0...v1.8.1) (2022-01-20)
 
 
