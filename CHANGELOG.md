@@ -1,3 +1,10 @@
+## [1.10.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.9.0...v1.10.0) (2022-02-20)
+
+
+### Features
+
+* filter gong and outreach ([#33](https://github.com/open-sauced/explore.opensauced.pizza/issues/33)) ([fd3431a](https://github.com/open-sauced/explore.opensauced.pizza/commit/fd3431a06ab235fe7412eee829f70bc2390f3309)), closes [#32](https://github.com/open-sauced/explore.opensauced.pizza/issues/32)
+
 ## [1.9.0](https://github.com/open-sauced/explore.opensauced.pizza/compare/v1.8.1...v1.9.0) (2022-01-23)
 
 
